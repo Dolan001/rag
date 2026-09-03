@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "framework": "rag",
+  "format": "markdown-first",
+  "skills": [
+    {"name": "design-rag-system", "path": "skills/design-rag-system/SKILL.md"},
+    {"name": "implement-rag-backend", "path": "skills/implement-rag-backend/SKILL.md"},
+    {"name": "implement-rag-client", "path": "skills/implement-rag-client/SKILL.md"},
+    {"name": "verify-rag-system", "path": "skills/verify-rag-system/SKILL.md"}
+  ]
+}
+

@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "instructions": {
+    "pre_task": "hooks/pre-task.md",
+    "pre_write": "hooks/pre-write.md",
+    "post_write": "hooks/post-write.md",
+    "pre_verify": "hooks/pre-verify.md",
+    "pre_commit": "hooks/pre-commit.md"
+  },
+  "hooks": {
+    "pre_task": ["require_explicit_rag_contract", "resolve_selected_frameworks", "acquire_target_path_lease"],
+    "pre_write": ["enforce_backend_secret_boundary", "require_authorization_before_retrieval"],
+    "post_write": ["check_changed_paths", "run_focused_rag_checks", "write_phase_evidence"],
+    "pre_verify": ["release_implementer_lease", "require_independent_agent", "require_versioned_eval_set"],
+    "pre_commit": ["require_rag_evidence", "scan_staged_secrets", "reject_sensitive_eval_content"]
+  }
+}
+

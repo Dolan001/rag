@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "capability": "rag",
+  "target_root": ".",
+  "backend_owners": {
+    "django-drf": ["models", "services", "selectors", "serializers", "views", "urls", "migrations"],
+    "fastapi": ["models", "services", "repositories", "queries", "schemas", "dependencies", "routes", "migrations"]
+  },
+  "responsibility_boundaries": ["ingestion", "retrieval", "generation", "providers", "evaluation"],
+  "client_boundaries": ["sources", "query", "citations", "feedback"],
+  "required_evidence": [
+    ".ai/evidence/rag/backend.json",
+    ".ai/evidence/rag/integration.json"
+  ],
+  "forbidden_tracked_content": ["provider credentials", "uploaded private documents", "model traces containing source bodies", "generated vector indexes"]
+}

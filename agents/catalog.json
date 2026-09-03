@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "format": "markdown-first",
+  "path_pattern": "agents/{agent}.md",
+  "framework": "rag",
+  "agents": [
+    {
+      "agent": "rag-solution-architect",
+      "purpose": "Turn explicit RAG requirements into data, ingestion, retrieval, generation, security, and evaluation contracts.",
+      "writes_application_code": false,
+      "outputs": ["RAG architecture decision", "quality targets", "task contracts"]
+    },
+    {
+      "agent": "rag-system-implementer",
+      "purpose": "Implement requirement-backed RAG slices through the selected backend and client packs.",
+      "writes_application_code": true,
+      "allowed_target_paths": ["apps/**", "packages/**", "docs/api/**", "tests/**", ".ai/evidence/**"],
+      "maximum_retries_per_failure": 2
+    },
+    {
+      "agent": "rag-independent-verifier",
+      "purpose": "Independently measure retrieval, grounding, authorization, resilience, latency, cost, and client behavior.",
+      "writes_application_code": false,
+      "allowed_target_paths": [".ai/evidence/**", "artifacts/**"]
+    }
+  ]
+}
+
