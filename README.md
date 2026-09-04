@@ -1,6 +1,6 @@
-# rag_ai
+# rag
 
-`rag_ai` is a code-free capability pack for production retrieval-augmented generation. It is loaded
+`rag` is a code-free capability pack for production retrieval-augmented generation. It is loaded
 by `ai_workflow` only when the PRD explicitly requests RAG, semantic retrieval, document question
 answering, grounded answers, or a knowledge-base assistant.
 
