@@ -1,7 +1,7 @@
 # rag
 
 `rag` is a code-free capability pack for production retrieval-augmented generation. It is loaded
-by `agent` only when the PRD explicitly requests RAG, semantic retrieval, document question
+by `agents` only when the PRD explicitly requests RAG, semantic retrieval, document question
 answering, grounded answers, or a knowledge-base assistant.
 
 The pack augments, rather than replaces, the selected framework packs:
