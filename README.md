@@ -1,7 +1,7 @@
 # rag
 
 `rag` is a code-free capability pack for production retrieval-augmented generation. It is loaded
-by `ai_workflow` only when the PRD explicitly requests RAG, semantic retrieval, document question
+by `agent` only when the PRD explicitly requests RAG, semantic retrieval, document question
 answering, grounded answers, or a knowledge-base assistant.
 
 The pack augments, rather than replaces, the selected framework packs:
@@ -15,4 +15,3 @@ pgvector, optional reranking behind an adapter, durable ingestion workers, expli
 abstention, an offline evaluation set, and provider-neutral embedding and generation interfaces.
 Agentic retrieval is added only when the PRD requires tool choice or multi-step investigation and
 its extra latency, cost, and security risk have explicit acceptance criteria.
-
